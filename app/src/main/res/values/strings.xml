@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Currency Rates</string>
+    <string name="current_rates">Current Rates</string>
+    <string name="updated_at">Updated at %s</string>
+    <string name="error_retrieve_rates">Error</string>
+    <string name="service_error">An error occurred while retrieve currency rates</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/current_rates"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:gravity="center"/>
+
+    <TextView
+            android:id="@+id/updated_at"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/updated_at"
+            android:layout_marginTop="4dp"
+            android:visibility="invisible"
+            android:layout_marginBottom="@dimen/normal_margin"
+            android:gravity="center"/>
+
+    <RelativeLayout
+            android:id="@+id/view_usd"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        <ProgressBar
+                android:id="@+id/loading_usd"
+                android:layout_width="25dp"
+                tools:visibility="gone"
+                android:layout_height="25dp"/>
+        <TextView
+                android:id="@+id/usd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_font"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="USD"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/view_pln"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_margin="@dimen/normal_margin"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        <ProgressBar
+                android:id="@+id/loading_pln"
+                android:layout_width="25dp"
+                tools:visibility="gone"
+                android:layout_height="25dp"/>
+        <TextView
+                android:id="@+id/pln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_font"
+                android:textStyle="bold"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:textColor="@color/colorPrimary"
+                android:text="PLN"/>
+    </RelativeLayout>
+</LinearLayout>
